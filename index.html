@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="icon" type="image" href="img/favicon.png"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather</h1>
+
+    <div class="search-container">
+      <div class="input-group">
+        <input id="city1" placeholder="Enter City 1" />
+        <button onclick="getWeather('city1', 'weather1')">Get Weather</button>
+      </div>
+
+      <div class="input-group">
+        <input id="city2" placeholder="Enter City 2" />
+        <button onclick="getWeather('city2', 'weather2')">Get Weather</button>
+      </div>
+    </div>
+
+    <div class="weather-display">
+      <div id="weather1" class="weather-card"></div>
+      <div id="weather2" class="weather-card"></div>
+    </div>
+
+    <div class="favorites">
+      <h2>⭐ Favorite Cities</h2>
+      <div id="favoritesList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
